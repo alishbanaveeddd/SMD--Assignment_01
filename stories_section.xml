@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Your Story -->
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_add_story"
+            android:contentDescription="Your Story"
+            android:background="@drawable/circle_border" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Story"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Story: karenne -->
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/story_karenne"
+            android:contentDescription="karenne"
+            android:background="@drawable/circle_border" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="karenne"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Story: zackjohn -->
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/story_zackjohn"
+            android:contentDescription="zackjohn"
+            android:background="@drawable/circle_border" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zackjohn"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Story: craig_ -->
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/story_craig"
+            android:contentDescription="craig_"
+            android:background="@drawable/circle_border" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="craig_"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_stories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>
+

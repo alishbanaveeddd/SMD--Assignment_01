@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp">
+
+    <!-- Highlight Image -->
+    <ImageView
+        android:id="@+id/iv_highlight_image"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@drawable/profile_placeholder"
+    android:contentDescription="Highlight"
+    android:scaleType="centerCrop"
+    android:background="@drawable/highlight_border" />
+
+    <!-- Highlight Title -->
+    <TextView
+        android:id="@+id/tv_highlight_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Highlight"
+    android:textColor="@color/black"
+    android:textSize="12sp"
+    android:layout_marginTop="4dp"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:maxWidth="60dp" />
+
+</LinearLayout>

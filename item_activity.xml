@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Profile Picture(s) -->
+    <LinearLayout
+        android:id="@+id/ll_profile_pictures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Single Profile Picture -->
+        <ImageView
+            android:id="@+id/iv_profile_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_placeholder"
+            android:contentDescription="Profile picture"
+            android:scaleType="centerCrop" />
+
+        <!-- Second Profile Picture (for multiple users) -->
+        <ImageView
+            android:id="@+id/iv_profile_picture_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_placeholder"
+            android:contentDescription="Profile picture"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="-16dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Activity Content -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp">
+
+        <!-- Activity Text -->
+        <TextView
+            android:id="@+id/tv_activity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="karennne liked your photo."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1h"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Content Thumbnail -->
+    <ImageView
+        android:id="@+id/iv_content_thumbnail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/post_placeholder"
+        android:contentDescription="Content thumbnail"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>
+
+
